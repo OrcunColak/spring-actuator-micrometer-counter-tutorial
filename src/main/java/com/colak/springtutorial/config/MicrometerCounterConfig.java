@@ -1,23 +1,17 @@
 package com.colak.springtutorial.config;
 
 import io.micrometer.core.instrument.Counter;
-import io.micrometer.core.instrument.DistributionSummary;
 import io.micrometer.core.instrument.MeterRegistry;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
-/**
- * This class shows that we can create prometheus objects globally
- */
+// This class shows that we can create prometheus objects globally
 @Component
 @RequiredArgsConstructor
 @Getter
-public class PrometheusCustomMonitor {
+public class MicrometerCounterConfig {
     private Counter requestErrorCount;
     private Counter orderCount;
 
