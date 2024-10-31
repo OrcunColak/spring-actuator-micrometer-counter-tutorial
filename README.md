@@ -6,6 +6,8 @@ https://erkanyasun.medium.com/spring-boot-3-3-embracing-the-latest-features-and-
 # Prometheus
 http://localhost:8080/actuator/prometheus
 
+# Create Micrometer Counter
+
 We can get a counter by
 
 - MeterRegistry registry.counter() method
